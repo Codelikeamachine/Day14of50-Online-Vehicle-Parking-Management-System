@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parking Rules</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .parking-rules {
+      list-style: none;
+      padding: 0;
+    }
+
+    .parking-rule {
+      margin: 20px 0;
+    }
+
+    .parking-rule ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .parking-rule h3, .parking-rule h4 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .drop-zone {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .drag-vehicle {
+      margin-top: 50px;
+    }
+
+    .vehicles {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column; /* Change to column for vertical layout */
+      align-items: center; /* Center align the images */
+    }
+
+    .vehicles li {
+      display: inline-block;
+      margin: 10px 0; /* Add margin to separate the images */
+    }
+
+    .vehicles img {
+      width: 100px;
+      height: auto;
+      cursor: pointer;
+    }
+
+    h3 {
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    .drop-text {
+      display: inline-block;
+      opacity: 0;
+      animation: drop 0.5s forwards;
+    }
+
+    @keyframes drop {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <center><h3><p>Park Your Vehicles</p></h3></center>
+
+  <div class="container">
+    <ul class="parking-rules">
+      <li class="parking-rule">
+        <a href="index1.html"></a>
+        <ul>
+          <li><h3>Fire truck Parking Only</h3></li>
+          <h4>
+            <li>24hrs</li>
+            <li>Mon Thru Fri</li>
+          </h4>
+        </ul>
+      </li>
+      <li class="parking-rule">
+        <ul>
+          <li><h3>Ambulance Parking Only</h3></li>
+          <h4>
+            <li>24hrs</li>
+            <li>Saturday to Sunday</li>
+          </h4>
+        </ul>
+      </li>
+      <li class="parking-rule">
+        <ul>
+          <li><h3>Car Parking</h3></li>
+          <h4>
+            <li>3am to 9pm</li>
+            <li>Mon Thru Fri</li>
+          </h4>
+        </ul>
+      </li>
+      <li class="parking-rule">
+        <ul>
+          <li><h3>Bike Parking</h3></li>
+          <h4>
+            <li>2am to 10pm</li>
+            <li>Mon Thru Fri</li>
+          </h4>
+        </ul>
+      </li>
+      <li class="parking-rule">
+        <ul>
+          <li><h3>Bicycle Parking</h3></li>
+          <h4>
+            <li>3pm to 6pm</li>
+            <li>Mon Thru Fri</li>
+          </h4>
+        </ul>
+      </li>
+    </ul>
+
+    <section class="drop-zone">
+      <h1 style="color: rgb(0, 0, 0);">
+        <span class="drop-text" style="animation-delay: 0s;">C</span>
+        <span class="drop-text" style="animation-delay: 0.1s;">l</span>
+        <span class="drop-text" style="animation-delay: 0.2s;">i</span>
+        <span class="drop-text" style="animation-delay: 0.3s;">c</span>
+        <span class="drop-text" style="animation-delay: 0.4s;">k</span>
+        <span class="drop-text" style="animation-delay: 0.5s;"> </span>
+        <span class="drop-text" style="animation-delay: 0.6s;">O</span>
+        <span class="drop-text" style="animation-delay: 0.7s;">n</span>
+        <span class="drop-text" style="animation-delay: 0.8s;"> </span>
+        <span class="drop-text" style="animation-delay: 0.9s;">V</span>
+        <span class="drop-text" style="animation-delay: 1s;">e</span>
+        <span class="drop-text" style="animation-delay: 1.1s;">h</span>
+        <span class="drop-text" style="animation-delay: 1.2s;">i</span>
+        <span class="drop-text" style="animation-delay: 1.3s;">c</span>
+        <span class="drop-text" style="animation-delay: 1.4s;">l</span>
+        <span class="drop-text" style="animation-delay: 1.5s;">e</span>
+        <span class="drop-text" style="animation-delay: 1.6s;"> </span>
+        <span class="drop-text" style="animation-delay: 1.7s;">T</span>
+        <span class="drop-text" style="animation-delay: 1.8s;">h</span>
+        <span class="drop-text" style="animation-delay: 1.9s;">a</span>
+        <span class="drop-text" style="animation-delay: 2s;">t</span>
+        <span class="drop-text" style="animation-delay: 2.1s;"> </span>
+        <span class="drop-text" style="animation-delay: 2.2s;">Y</span>
+        <span class="drop-text" style="animation-delay: 2.3s;">o</span>
+        <span class="drop-text" style="animation-delay: 2.4s;">u</span>
+        <span class="drop-text" style="animation-delay: 2.5s;"> </span>
+        <span class="drop-text" style="animation-delay: 2.6s;">W</span>
+        <span class="drop-text" style="animation-delay: 2.7s;">a</span>
+        <span class="drop-text" style="animation-delay: 2.8s;">n</span>
+        <span class="drop-text" style="animation-delay: 2.9s;">t</span>
+        <span class="drop-text" style="animation-delay: 3s;"> </span>
+        <span class="drop-text" style="animation-delay: 3.1s;">t</span>
+        <span class="drop-text" style="animation-delay: 3.2s;">o</span>
+        <span class="drop-text" style="animation-delay: 3.3s;"> </span>
+        <span class="drop-text" style="animation-delay: 3.4s;">P</span>
+        <span class="drop-text" style="animation-delay: 3.5s;">a</span>
+        <span class="drop-text" style="animation-delay: 3.6s;">r</span>
+        <span class="drop-text" style="animation-delay: 3.7s;">k</span>
+        <span id="changingText"></span>
+      </h1>
+    </section> 
+
+    <section class="drag-vehicle">
+      <ul class="vehicles">
+        <li>
+          <a href="index1.html"><img id="ft" alt="fire truck" src="https://cdn.glitch.com/20f985bd-431d-4807-857b-e966e015c91b%2Ftruck-clip-art-fire-truck4.png?1519011787956"></a>
+        </li>
+        <li>
+          <a href="index1.html"><img id="ambulance" alt="ambulance" src="https://cdn.glitch.com/20f985bd-431d-4807-857b-e966e015c91b%2Fambulance5.png?1519011787610"></a>
+        </li>
+        <li>
+          <a href="index1.html"><img id="car" alt="car" src="https://cdn.glitch.com/20f985bd-431d-4807-857b-e966e015c91b%2Fcar-20clip-20art-1311497037_Vector_Clipart.png?1519011788408"></a>
+        </li>
+        <li>
+          <a href="index1.html"><img id="car" alt="car" src="Image/bike.jpg"></a>
+        </li>
+        <li>
+          <a href="index1.html"><img id="bike" alt="bicycle" src="https://cdn.glitch.com/20f985bd-431d-4807-857b-e966e015c91b%2Fbicycle-20clip-20art-bicycle3.png?1519011787816"></a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
